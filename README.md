@@ -2,7 +2,7 @@
 
 A passionate **Backend & Cloud Developer** from Mexico, currently in my 7th semester of Computer Science. I love building robust, scalable solutions and tackling complex problems.
 
--   🌱 I'm currently learning **DS, ML**.
+-   🌱 I'm currently learning **DS, ML, CV**.
 -   📫 How to reach me: **axurmen214@gmail.com**
 -   ⚡ Fun fact: I love to play soccer and the music in general.
 
