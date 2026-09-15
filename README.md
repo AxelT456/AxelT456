@@ -1,10 +1,10 @@
 # Hi 👋, I'm Axel Tapia
 
-A passionate **Backend & Cloud Developer** from Mexico, currently in my 8th semester of Computer Science. I love building robust, scalable solutions and tackling complex problems.
+A passionate **Software Architect** from Mexico, currently in my 9th semester of Computer Science. I love building robust, scalable solutions and tackling complex problems.
 
 -   🌱 I'm currently learning **DS, ML, CV**.
 -   📫 How to reach me: **axurmen214@gmail.com**
--   ⚡ Fun fact: I love to play soccer and the music in general.
+-   ⚡ Fun fact: I love to play sports, watch anime and play the guitar.
 
 ---
 
