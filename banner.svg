@@ -1,40 +1,133 @@
-<!-- Gradiente de olas profundas -->
-<linearGradient id="waveGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
-  <stop offset="0%" stop-color="#223249" stop-opacity="0.85" />
-  <stop offset="100%" stop-color="#16161D" stop-opacity="0.95" />
-</linearGradient>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Fondo nocturno Sumi Ink -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16161D" />
+      <stop offset="65%" stop-color="#1F1F28" />
+      <stop offset="100%" stop-color="#223249" />
+    </linearGradient>
 
-<linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-  <stop offset="0%" stop-color="#2D4F67" stop-opacity="0.7" />
-  <stop offset="50%" stop-color="#223249" stop-opacity="0.9" />
-  <stop offset="100%" stop-color="#1F1F28" stop-opacity="0.95" />
-</linearGradient>
+    <!-- Gradiente de olas profundas Kanagawa -->
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#223249" />
+      <stop offset="100%" stop-color="#16161D" />
+    </linearGradient>
 
-<!-- Patrón Seigaiha (Olas tradicionales japonesas sutiles en el fondo) -->
-<pattern id="seigaiha" width="80" height="40" patternUnits="userSpaceOnUse">
-  <g stroke="#2D4F67" stroke-width="0.7" fill="none" opacity="0.22">
-    <circle cx="40" cy="40" r="10" />
-    <circle cx="40" cy="40" r="20" />
-    <circle cx="40" cy="40" r="30" />
-    <circle cx="40" cy="40" r="40" />
-    <circle cx="0" cy="40" r="10" />
-    <circle cx="0" cy="40" r="20" />
-    <circle cx="0" cy="40" r="30" />
-    <circle cx="0" cy="40" r="40" />
-    <circle cx="80" cy="40" r="10" />
-    <circle cx="80" cy="40" r="20" />
-    <circle cx="80" cy="40" r="30" />
-    <circle cx="80" cy="40" r="40" />
-    <circle cx="20" cy="20" r="10" />
-    <circle cx="20" cy="20" r="20" />
-    <circle cx="20" cy="20" r="30" />
-    <circle cx="60" cy="20" r="10" />
-    <circle cx="60" cy="20" r="20" />
-    <circle cx="60" cy="20" r="30" />
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D4F67" />
+      <stop offset="50%" stop-color="#223249" />
+      <stop offset="100%" stop-color="#1F1F28" />
+    </linearGradient>
+
+    <!-- Luna Carmesí (Akatsuki / Dark Anime) -->
+    <linearGradient id="moonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C34043" />
+      <stop offset="100%" stop-color="#8B2629" />
+    </linearGradient>
+
+    <!-- Patrón Seigaiha (Olas tradicionales japonesas) -->
+    <pattern id="seigaiha" width="80" height="40" patternUnits="userSpaceOnUse">
+      <g stroke="#2D4F67" stroke-width="0.7" fill="none" opacity="0.22">
+        <circle cx="40" cy="40" r="10" />
+        <circle cx="40" cy="40" r="20" />
+        <circle cx="40" cy="40" r="30" />
+        <circle cx="40" cy="40" r="40" />
+        <circle cx="0" cy="40" r="10" />
+        <circle cx="0" cy="40" r="20" />
+        <circle cx="0" cy="40" r="30" />
+        <circle cx="0" cy="40" r="40" />
+        <circle cx="80" cy="40" r="10" />
+        <circle cx="80" cy="40" r="20" />
+        <circle cx="80" cy="40" r="30" />
+        <circle cx="80" cy="40" r="40" />
+        <circle cx="20" cy="20" r="10" />
+        <circle cx="20" cy="20" r="20" />
+        <circle cx="20" cy="20" r="30" />
+        <circle cx="60" cy="20" r="10" />
+        <circle cx="60" cy="20" r="20" />
+        <circle cx="60" cy="20" r="30" />
+      </g>
+    </pattern>
+
+    <!-- Grilla Cyber-Zen -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#727169" stroke-width="0.4" opacity="0.14" />
+    </pattern>
+  </defs>
+
+  <!-- 1. CAPA DE FONDO -->
+  <rect width="1200" height="320" rx="10" fill="url(#skyGrad)" />
+  <rect width="1200" height="320" rx="10" fill="url(#seigaiha)" />
+  <rect width="1200" height="320" rx="10" fill="url(#grid)" />
+
+  <!-- 2. LUNA CARMESÍ & MONTE FUJI (Derecha) -->
+  <circle cx="930" cy="135" r="78" fill="url(#moonGrad)" opacity="0.88" />
+  <circle cx="930" cy="135" r="86" fill="none" stroke="#C34043" stroke-width="0.8" opacity="0.35" stroke-dasharray="6 4" />
+
+  <!-- Silueta del Monte Fuji -->
+  <path d="M 680 300 Q 855 245 905 148 L 955 148 Q 1005 245 1180 300 Z" fill="#16161D" stroke="#2D4F67" stroke-width="1.2" />
+  <!-- Nieve en la cumbre estilo Ukiyo-e -->
+  <path d="M 905 148 L 955 148 L 972 182 L 952 172 L 940 190 L 928 170 L 915 184 L 892 175 Z" fill="#DCD7BA" opacity="0.85" />
+
+  <!-- 3. OLAS DE KANAGAWA (Capas vectoriales con espuma Fuji White) -->
+  <!-- Ola de fondo -->
+  <path d="M 0 235 Q 190 175 390 225 T 790 205 T 1200 225 L 1200 320 L 0 320 Z" fill="url(#waveGrad2)" opacity="0.85" />
+  <path d="M 0 235 Q 190 175 390 225 T 790 205 T 1200 225" fill="none" stroke="#7E9CD8" stroke-width="1.5" opacity="0.45" />
+
+  <!-- Cresta estilizada de La Gran Ola (Izquierda/Centro) -->
+  <path d="M -20 270 Q 120 190 240 230 Q 210 250 190 275 Q 360 220 540 265 T 920 245 T 1200 265 L 1200 320 L -20 320 Z" fill="url(#waveGrad1)" />
+  <path d="M -20 270 Q 120 190 240 230 M 190 275 Q 360 220 540 265 T 920 245 T 1200 265" fill="none" stroke="#DCD7BA" stroke-width="2" opacity="0.7" />
+
+  <!-- Espuma de ola (Puntos Ukiyo-e) -->
+  <g fill="#DCD7BA" opacity="0.75">
+    <circle cx="242" cy="225" r="3" />
+    <circle cx="252" cy="232" r="2" />
+    <circle cx="235" cy="216" r="2" />
+    <circle cx="260" cy="222" r="1.5" />
+    <circle cx="545" cy="258" r="2.5" />
+    <circle cx="558" cy="262" r="1.8" />
+    <circle cx="915" cy="238" r="2.5" />
+    <circle cx="928" cy="242" r="1.5" />
   </g>
-</pattern>
 
-<!-- Grilla cyber-zen sutil -->
-<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#727169" stroke-width="0.4" opacity="0.15" />
-</pattern>
+  <!-- 4. MARCO TÉCNICO & HUD JAPONÉS -->
+  <rect x="16" y="16" width="1168" height="288" rx="6" fill="none" stroke="#2D4F67" stroke-width="1" opacity="0.7" />
+  <line x1="72" y1="52" x2="72" y2="232" stroke="#C34043" stroke-width="3" />
+
+  <!-- Coordenadas y metadatos superiores -->
+  <text x="92" y="58" fill="#727169" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="12" letter-spacing="3">
+    SYS.ARCH // 神奈川沖浪裏 // 01
+  </text>
+
+  <!-- 5. TIPOGRAFÍA PRINCIPAL (AXEL TAPIA) -->
+  <text x="92" y="122" fill="#DCD7BA" font-family="'JetBrains Mono', 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="54" letter-spacing="5">
+    AXEL TAPIA
+  </text>
+
+  <!-- Subtítulo en Kanji y Rol -->
+  <text x="94" y="162" fill="#7E9CD8" font-family="'JetBrains Mono', Consolas, monospace" font-weight="600" font-size="19" letter-spacing="1.5">
+    開発者 — Full Stack Developer @ Kigo - Parkimovil
+  </text>
+
+  <!-- Enfoque de Arquitectura, Cloud e IA -->
+  <text x="94" y="196" fill="#DCD7BA" font-family="'JetBrains Mono', Consolas, monospace" font-size="14" opacity="0.82" letter-spacing="1">
+    Domain-Driven Design (DDD)  •  Cloud &amp; Kubernetes  •  AWS  •  AI Agents
+  </text>
+
+  <!-- Tags inferiores dentro del banner -->
+  <g transform="translate(94, 214)">
+    <rect x="0" y="0" width="215" height="24" rx="3" fill="#223249" stroke="#2D4F67" stroke-width="1" />
+    <text x="12" y="16" fill="#DCD7BA" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" letter-spacing="1">STATUS: BUILDING IN PROD</text>
+
+    <rect x="228" y="0" width="195" height="24" rx="3" fill="#16161D" stroke="#C34043" stroke-width="1" />
+    <text x="240" y="16" fill="#C34043" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" letter-spacing="1">TARGET: AWS CERTIFIED</text>
+  </g>
+
+  <!-- 6. SELLO HANKO TRADICIONAL JAPONÉS (Esquina superior derecha) -->
+  <g transform="translate(1105, 42)">
+    <rect x="0" y="0" width="52" height="52" rx="4" fill="#16161D" fill-opacity="0.8" stroke="#C34043" stroke-width="2.2" />
+    <rect x="4" y="4" width="44" height="44" rx="2" fill="none" stroke="#C34043" stroke-width="0.8" opacity="0.6" />
+    <text x="26" y="23" fill="#C34043" font-family="serif" font-weight="bold" font-size="17" text-anchor="middle">開</text>
+    <text x="26" y="43" fill="#C34043" font-family="serif" font-weight="bold" font-size="17" text-anchor="middle">発</text>
+  </g>
+</svg>
